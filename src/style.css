@@ -1,0 +1,118 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900|Source+Sans+Pro|Playfair+Display|Permanent+Marker|Lato:100|Sarabun');
+
+/* Selection Style */
+::-moz-selection { /* Code for Firefox */
+    background: #eee;
+}
+::selection {
+    background: #eee;
+}
+
+/* Custom Scrollbar */
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #eee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+} 
+
+/* Body Style */
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgb(34, 42, 66);
+  background-image: url("./assets/dots.png");
+  background-size: contain;
+}
+
+/* Numbers and Titles of Sections Style */
+h1 {
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 55px;
+} 
+
+.title {
+  position: static;
+  padding-top: 120px;
+  margin-left: 50px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 5px;
+}
+.text-on-back {
+  position: relative;
+  z-index: 1;
+  font-size: 9.5em;
+  font-weight: 900;
+  margin-top: -170px;
+  color: rgba(255, 255, 255, 0.2);   
+}
+
+/* Footer Style */
+.fixed-bottom {
+  z-index: 1;
+  background: rgb(34, 42, 66);
+  background-image: url("./assets/dots.png");
+  background-size: cover;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* Media Query for App */
+@media only screen and (max-width: 1250px) {
+  div .header .author { font-size: 3em; }  
+  nav ul li a { font-size: 1.5em; }  
+  div .skills { margin-top: -70px; }   
+}
+@media only screen and (max-width: 1050px) {
+  div .header .author { font-size: 2.9em; padding-top: 120px; } 
+  div .about strong { font-size: 1.7em; }
+  div .skills { margin-top: -60px; }  
+  div .contact a { font-size: 1.8em; }
+  nav ul li a { font-size: 1.4em; }   
+}
+@media only screen and (max-width: 770px) {
+  div .header .author { font-size: 2.3em; padding-top: 20px; }
+  div .about strong { font-size: 1em; }
+  div .skills ul li { margin-left: -30px; }
+  div .skills { margin-top: -20px; }  
+  div .header { padding-top: 100px; }
+  div .contact a { font-size: 1.5em; }
+  nav ul li a { font-size: 1.1em; }
+}
+@media only screen and (max-width: 430px) {
+  div .header .author { font-size: 1.8em; padding-top: 30px; }
+  div .about strong { font-size: 1.3em; }
+  div .about h2 { font-size: 1.2em; }
+  div .skills ul li { margin-left: -30px; } 
+  div .skills { margin-top: -30px; }
+  div .contact a { font-size: 1.3em; }
+  div .header { padding-top: 100px; }
+  nav ul li a { font-size: 1em; }
+} 
