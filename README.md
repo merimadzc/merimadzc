@@ -1,6 +1,9 @@
 # merimadzc
 
-## Project setup
+## 
+https://merimadzc.github.io/merimadzc/
+
+### Project setup
 ```
 npm install
 ```
